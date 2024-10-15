@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+
+  font-weight: bold;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url("./image/mountains-3059528_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.weather-app {
+  width: 500px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(41, 42, 44)
+  );
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 90%;
+  animation: anime 2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+@keyframes anime {
+  0% {
+    margin-left: -1000px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+select {
+  padding: 9px 20px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button {
+  padding: 15px 20px;
+  border: none;
+  box-shadow: 0, 0, 0 20px;
+
+  background: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(9, 27, 216)
+  );
+  color: white;
+}
+
+button:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(216, 9, 33)
+  );
+}
+
+.weather-content {
+  text-align: center;
+}
+
+.weather-content h1 {
+  font-size: 2rem;
+}
+
+.weather-img {
+  display: flex;
+  justify-content: center;
+}
+option {
+  color: red;
+}
+.boxes {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    margin-top: 10px;
+  }
+  select {
+    margin-top: 10px;
+  }
+}
